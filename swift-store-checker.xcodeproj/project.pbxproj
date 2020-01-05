@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20A084F623C153800057E5C5 /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A084F523C153800057E5C5 /* api.swift */; };
+		20A084FA23C1DCD00057E5C5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A084F923C1DCD00057E5C5 /* Address.swift */; };
+		20A084FC23C1DCE70057E5C5 /* PartAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A084FB23C1DCE70057E5C5 /* PartAvailability.swift */; };
+		20A084FE23C1DD100057E5C5 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A084FD23C1DD100057E5C5 /* Hour.swift */; };
+		20A0850023C1DD240057E5C5 /* StoreHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A084FF23C1DD240057E5C5 /* StoreHours.swift */; };
+		20A0850223C1DD340057E5C5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850123C1DD340057E5C5 /* Store.swift */; };
+		20A0850423C1DD4A0057E5C5 /* PickupMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850323C1DD4A0057E5C5 /* PickupMessageBody.swift */; };
+		20A0850623C1DD5B0057E5C5 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850523C1DD5B0057E5C5 /* Head.swift */; };
+		20A0850823C1DD6D0057E5C5 /* PickupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850723C1DD6D0057E5C5 /* PickupMessage.swift */; };
+		20A0850C23C1DDD30057E5C5 /* RetailStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850B23C1DDD30057E5C5 /* RetailStore.swift */; };
+		20A0850E23C1DDF70057E5C5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A0850D23C1DDF70057E5C5 /* Product.swift */; };
 		20B698FC23BA02D800069F95 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B698FB23BA02D800069F95 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +34,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20A084F523C153800057E5C5 /* api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		20A084F923C1DCD00057E5C5 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		20A084FB23C1DCE70057E5C5 /* PartAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartAvailability.swift; sourceTree = "<group>"; };
+		20A084FD23C1DD100057E5C5 /* Hour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		20A084FF23C1DD240057E5C5 /* StoreHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreHours.swift; sourceTree = "<group>"; };
+		20A0850123C1DD340057E5C5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		20A0850323C1DD4A0057E5C5 /* PickupMessageBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupMessageBody.swift; sourceTree = "<group>"; };
+		20A0850523C1DD5B0057E5C5 /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		20A0850723C1DD6D0057E5C5 /* PickupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupMessage.swift; sourceTree = "<group>"; };
+		20A0850B23C1DDD30057E5C5 /* RetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailStore.swift; sourceTree = "<group>"; };
+		20A0850D23C1DDF70057E5C5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		20A0850F23C1F0EB0057E5C5 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		20B698F823BA02D800069F95 /* swift-store-checker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-store-checker"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B698FB23BA02D800069F95 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +61,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A0850923C1DD8D0057E5C5 /* Codables */ = {
+			isa = PBXGroup;
+			children = (
+				20A084F923C1DCD00057E5C5 /* Address.swift */,
+				20A0850523C1DD5B0057E5C5 /* Head.swift */,
+				20A084FD23C1DD100057E5C5 /* Hour.swift */,
+				20A084FB23C1DCE70057E5C5 /* PartAvailability.swift */,
+				20A0850723C1DD6D0057E5C5 /* PickupMessage.swift */,
+				20A0850323C1DD4A0057E5C5 /* PickupMessageBody.swift */,
+				20A0850123C1DD340057E5C5 /* Store.swift */,
+				20A084FF23C1DD240057E5C5 /* StoreHours.swift */,
+			);
+			path = Codables;
+			sourceTree = "<group>";
+		};
+		20A0850A23C1DDC60057E5C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				20A0850B23C1DDD30057E5C5 /* RetailStore.swift */,
+				20A0850D23C1DDF70057E5C5 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		20B698EF23BA02D800069F95 = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +104,11 @@
 		20B698FA23BA02D800069F95 /* swift-store-checker */ = {
 			isa = PBXGroup;
 			children = (
+				20A084F523C153800057E5C5 /* api.swift */,
 				20B698FB23BA02D800069F95 /* main.swift */,
+				20A0850923C1DD8D0057E5C5 /* Codables */,
+				20A0850A23C1DDC60057E5C5 /* Models */,
+				20A0850F23C1F0EB0057E5C5 /* Config.plist */,
 			);
 			path = "swift-store-checker";
 			sourceTree = "<group>";
@@ -120,7 +171,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A0850623C1DD5B0057E5C5 /* Head.swift in Sources */,
 				20B698FC23BA02D800069F95 /* main.swift in Sources */,
+				20A0850C23C1DDD30057E5C5 /* RetailStore.swift in Sources */,
+				20A0850823C1DD6D0057E5C5 /* PickupMessage.swift in Sources */,
+				20A084FA23C1DCD00057E5C5 /* Address.swift in Sources */,
+				20A0850E23C1DDF70057E5C5 /* Product.swift in Sources */,
+				20A0850223C1DD340057E5C5 /* Store.swift in Sources */,
+				20A0850023C1DD240057E5C5 /* StoreHours.swift in Sources */,
+				20A0850423C1DD4A0057E5C5 /* PickupMessageBody.swift in Sources */,
+				20A084FE23C1DD100057E5C5 /* Hour.swift in Sources */,
+				20A084F623C153800057E5C5 /* api.swift in Sources */,
+				20A084FC23C1DCE70057E5C5 /* PartAvailability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
