@@ -45,7 +45,6 @@
 		20A0850723C1DD6D0057E5C5 /* PickupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupMessage.swift; sourceTree = "<group>"; };
 		20A0850B23C1DDD30057E5C5 /* RetailStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailStore.swift; sourceTree = "<group>"; };
 		20A0850D23C1DDF70057E5C5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		20A0850F23C1F0EB0057E5C5 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		20B698F823BA02D800069F95 /* swift-store-checker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-store-checker"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B698FB23BA02D800069F95 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +107,6 @@
 				20B698FB23BA02D800069F95 /* main.swift */,
 				20A0850923C1DD8D0057E5C5 /* Codables */,
 				20A0850A23C1DDC60057E5C5 /* Models */,
-				20A0850F23C1F0EB0057E5C5 /* Config.plist */,
 			);
 			path = "swift-store-checker";
 			sourceTree = "<group>";
