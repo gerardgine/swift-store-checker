@@ -26,13 +26,19 @@ let retailStores = [
     "WACR":  RetailStore(code: "R014", name: "Walnut Creek")
 ]
 
-var storesToCheck: [RetailStore] = []
-if CommandLine.argc > 1 && CommandLine.arguments.contains("-h") {
-    print("Usage: \(CommandLine.arguments.first!) [STORE, STORE, ...]")
+func printHelp() {
+    print("Usage:\n  \((CommandLine.arguments.first! as NSString).lastPathComponent) [STORECODE, STORECODE, ...] [options]")
+    print("\nOptions:")
+    print("  -h / --help: Print this error message\n")
     print("Available stores:")
     for (code, store) in retailStores {
         print("  \(code): \(store.name)")
     }
+}
+
+var storesToCheck: [RetailStore] = []
+if CommandLine.argc > 1 && (CommandLine.arguments.contains("-h") || CommandLine.arguments.contains("--help")) {
+    printHelp()
     exit(0)
 } else if CommandLine.argc > 1 {
     // Arguments have been passed. We gotta filter what stores to check.
@@ -41,8 +47,13 @@ if CommandLine.argc > 1 && CommandLine.arguments.contains("-h") {
         if firstArg {
             firstArg = false
         } else {
-            // TODO: Make this safer
-            storesToCheck.append(retailStores[argument]!)
+            let capitalizedArg = argument.uppercased()
+            if let validStore = retailStores[capitalizedArg] {
+                storesToCheck.append(validStore)
+            } else {
+                print("\(capitalizedArg) is not a valid store.")
+                exit(1)
+            }
         }
     }
 } else {
