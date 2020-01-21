@@ -26,25 +26,29 @@ let retailStores = [
     "WACR":  RetailStore(code: "R014", name: "Walnut Creek")
 ]
 
-//print(CommandLine.argc)
-//
-//for argument in CommandLine.arguments {
-//    switch argument {
-//    case "arg1":
-//        print("first argument: \(argument)")
-//
-//    case "arg2":
-//        print("second argument: \(argument)")
-//
-//    default:
-//        print("an argument: \(argument)")
-//    }
-//}
-
-// TODO: storesToCheck should be populated with whatever the user wants
 var storesToCheck: [RetailStore] = []
-for (_, store) in retailStores {
-    storesToCheck.append(store)
+if CommandLine.argc > 1 && CommandLine.arguments.contains("-h") {
+    print("Usage: \(CommandLine.arguments.first!) [STORE, STORE, ...]")
+    print("Available stores:")
+    for (code, store) in retailStores {
+        print("  \(code): \(store.name)")
+    }
+    exit(0)
+} else if CommandLine.argc > 1 {
+    // Arguments have been passed. We gotta filter what stores to check.
+    var firstArg = true
+    for argument in CommandLine.arguments {
+        if firstArg {
+            firstArg = false
+        } else {
+            // TODO: Make this safer
+            storesToCheck.append(retailStores[argument]!)
+        }
+    }
+} else {
+    for (_, store) in retailStores {
+        storesToCheck.append(store)
+    }
 }
 
 var iterationCount = 0
